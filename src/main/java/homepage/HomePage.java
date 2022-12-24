@@ -8,7 +8,7 @@ import base.TestBase;
 
 public class HomePage extends TestBase {
 
-	@FindBy(xpath = "//*[@id=\"MainLink_4\"]")
+	@FindBy(xpath = "//*[@class='mainLinkList']//*[contains(text(),'FLOWERS')]")
 	WebElement Flowers;
 
 	public HomePage() {
