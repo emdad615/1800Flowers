@@ -24,7 +24,7 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"D:\\Selenium\\Eclipse Workplace\\1800Flowers\\src\\test\\resources\\Config\\config.properties");
+					"/Users/emdadhoque/Developments/Repository/1800Flowers/src/test/resources/Config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
@@ -78,8 +78,9 @@ public class TestBase {
 		if (System.getProperty("os.name").contains("Window")) {
 
 			if (browserName.equals("Chrome")) {
-				System.setProperty("webdriver.chrome.driver",
-						"D:\\Selenium\\Eclipse Workplace\\1800Flowers\\src\\test\\resources\\Driver\\chromedriver.exe");
+				// System.setProperty("webdriver.chrome.driver",
+				// "D:\\Selenium\\Eclipse
+				// Workplace\\1800Flowers\\src\\test\\resources\\Driver\\chromedriver.exe");
 				driver = new ChromeDriver(options);
 //				System.setProperty("webdriver.chrome.driver",
 //				System.getProperty("user.dir", "\\src\\test\\resources\\Driver\\chromedriver.exe"));	
@@ -124,23 +125,23 @@ public class TestBase {
 
 				throw new Exception("Browser is not correct, Please use Chrome, Firefox or Edge");
 			}
-			
+
 		} else if (System.getProperty("os.name").contains("Mac")) {
 			if (browserName.equals("Chrome")) {
 				System.setProperty("webdriver.chrome.driver",
-						"D:\\Selenium\\Eclipse Workplace\\1800Flowers\\src\\test\\resources\\Driver\\chromedriver");
+						"/Users/emdadhoque/Developments/Repository/1800Flowers/src/test/resources/Driver/chromedriver");
 				driver = new ChromeDriver(options);
 
 			} else if (browserName.equals("Firefox")) {
 
 				System.setProperty("webdriver.gecko.driver",
-						"D:\\Selenium\\Eclipse Workplace\\1800Flowers\\src\\test\\resources\\Driver\\geckodriver");
+						"/Users/emdadhoque/Developments/Repository/1800Flowers/src/test/resources/Driver/geckodriver");
 				driver = new FirefoxDriver();
 
 			} else if (browserName.equalsIgnoreCase("Edge")) {
 
 				System.setProperty("webdriver.edge.driver",
-						"D:\\Selenium\\Eclipse Workplace\\1800Flowers\\src\\test\\resources\\Driver\\msedgedriver");
+						"/Users/emdadhoque/Developments/Repository/1800Flowers/src/test/resources/Driver/msedgedriver");
 
 				driver = new EdgeDriver();
 			} else {
@@ -148,10 +149,8 @@ public class TestBase {
 				throw new Exception("Browser is not correct, Please use Chrome, Firefox or Edge");
 			}
 
-
 		}
-		
-		
+
 		driver.manage().window().maximize();
 		driver.manage().deleteAllCookies();
 

@@ -1,21 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-12-23T19:44:06 EST" name="Default suite" finished-at="2022-12-23T19:44:15 EST" duration-ms="8898">
+  <suite name="Default suite" duration-ms="12722" started-at="2023-01-02T21:39:03 EST" finished-at="2023-01-02T21:39:16 EST">
     <groups>
     </groups>
-    <test started-at="2022-12-23T19:44:06 EST" name="Default test" finished-at="2022-12-23T19:44:15 EST" duration-ms="8898">
+    <test name="Default test" duration-ms="12722" started-at="2023-01-02T21:39:03 EST" finished-at="2023-01-02T21:39:16 EST">
       <class name="homepageflowerstest.HomePageTest">
-        <test-method is-config="true" signature="setup()[pri:0, instance:homepageflowerstest.HomePageTest@429bffaa]" started-at="2022-12-23T19:44:06 EST" name="setup" finished-at="2022-12-23T19:44:14 EST" duration-ms="8067" status="PASS">
+        <test-method status="PASS" signature="setup()[pri:0, instance:homepageflowerstest.HomePageTest@e874448]" name="setup" is-config="true" duration-ms="11418" started-at="2023-01-02T21:39:03 EST" finished-at="2023-01-02T21:39:15 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setup -->
-        <test-method signature="clickOnFlowersTest()[pri:0, instance:homepageflowerstest.HomePageTest@429bffaa]" started-at="2022-12-23T19:44:14 EST" name="clickOnFlowersTest" finished-at="2022-12-23T19:44:15 EST" duration-ms="533" status="PASS">
+        <test-method status="PASS" signature="clickOnFlowersTest()[pri:0, instance:homepageflowerstest.HomePageTest@e874448]" name="clickOnFlowersTest" duration-ms="752" started-at="2023-01-02T21:39:15 EST" finished-at="2023-01-02T21:39:16 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- clickOnFlowersTest -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:homepageflowerstest.HomePageTest@429bffaa]" started-at="2022-12-23T19:44:15 EST" name="teardown" finished-at="2022-12-23T19:44:15 EST" duration-ms="225" status="PASS">
+        <test-method status="PASS" signature="teardown()[pri:0, instance:homepageflowerstest.HomePageTest@e874448]" name="teardown" is-config="true" duration-ms="457" started-at="2023-01-02T21:39:16 EST" finished-at="2023-01-02T21:39:16 EST">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
