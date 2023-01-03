@@ -24,7 +24,11 @@ public class TestBase {
 		try {
 			prop = new Properties();
 			FileInputStream ip = new FileInputStream(
-					"/Users/emdadhoque/Developments/Repository/1800Flowers/src/test/resources/Config/config.properties");
+
+					"C:\\Users\\aktar\\git\\1800Flowers\\src\\test\\resources\\Config\\config.properties");
+				
+					
+					//"/Users/emdadhoque/Developments/Repository/1800Flowers/src/test/resources/Config/config.properties");
 			prop.load(ip);
 		} catch (FileNotFoundException e) {
 			e.printStackTrace();
